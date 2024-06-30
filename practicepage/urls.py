@@ -21,6 +21,10 @@ from practicepage import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('about/', views.aboutUs)
+    path('home/', views.home),
+    path('about/', views.aboutUs),
+    path('home/person/<int:id>', views.personDetail),
+    path('home/add/', views.add),
+    path('home/delete/<int:id>', views.delete)
     
 ]

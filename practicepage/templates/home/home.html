@@ -11,12 +11,12 @@
         <ul>
             {% for person in people %}
                 <li>{{person.id}}</li>
-                <li>{{person.name}}</li>
-                <li>{{person.year}}</li>
+                <li><a href="person/{{person.id}}">{{person.name}}</a></li> 
+                <li>{{person.DOB}}</li>
                 <br>
             {% endfor %}
         </ul>
-
+        <a href="home/add/">add a person</a>
         
     </body>
 </html>
